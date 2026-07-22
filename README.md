@@ -56,6 +56,17 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        // Espera o documento carregar
+document.addEventListener("DOMContentLoaded", () => {
+    const btnAction = document.getElementById("btnAction");
+
+    if (btnAction) {
+        btnAction.addEventListener("click", () => {
+            alert("🚀 Parabéns! Seu site no GitHub Pages está funcionando perfeitamente.");
+        });
+    }
+});
+    </script>
 </body>
 </html>
